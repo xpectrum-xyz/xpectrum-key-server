@@ -1,0 +1,21 @@
+{
+  "name": "xpectrum-key-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@noble/curves": "^2.2.0",
+    "@noble/ed25519": "^2.1.0",
+    "@noble/hashes": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "tweetnacl": "^1.0.3"
+  }
+}
