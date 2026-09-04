@@ -1,10 +1,22 @@
 # xpectrum-key-server
 
+> **Retired, 2026-09-04. Do not build on this.**
+>
+> This server proved NFT ownership and returned decrypted circle content. Nothing in
+> production uses it, and the approach is being replaced.
+>
+> The reason is the trust model. Decryption happened here, which meant this server held
+> `SERVER_SECRET` and could derive every passphrase, and a reader had to take that on
+> trust. Holder-gated content is being rebuilt so the only parties involved are the chain
+> and the holder.
+>
+> Kept for reference. Nothing here is deployed and the endpoints are not maintained.
+
 proves nft ownership then serves decrypted circle content. hold the token, get the content.
 
-built for [octra](https://octra.network) devnet. nfts live in an xcollection contract. content lives in a sealed circle. this server sits in the middle.
+built for [octra](https://octra.network). nfts live in an xcollection contract. content lives in a sealed circle. this server sits in the middle.
 
-contracts: [h8rmitt/xpectrum-contracts](https://github.com/h8rmitt/xpectrum-contracts)
+contracts: [xpectrum-xyz/xpectrum-contracts](https://github.com/xpectrum-xyz/xpectrum-contracts)
 
 ---
 
